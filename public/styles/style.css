@@ -1,3 +1,9 @@
+@font-face {
+  font-family:'Ubuntu';
+  src:url(fonts/Ubuntu/Ubuntu-Regular.ttf) format('truetype');
+} 
+  
+  
   body {
     margin: 0;
     padding: 0;
@@ -13,7 +19,47 @@
     justify-content: space-between;
     align-items: center;
   }
-  .footer {
+
+.content {
+
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+  .post1 {
+    padding: 0%;
+    height: 1%;
+    width: 90%;
+
+  }
+
+  .titulo {
+      font-family: 'Ubuntu';
+      font-size: 15px;
+      padding: 5%;
+    
+    }
+
+  .titulo #atualizar {
+
+    color: #ACB5C0;
+    margin-top: 0%;
+    font-family: 'Ubuntu'; 
+    
+  }
+
+
+
+
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+
+  .foosen {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -21,13 +67,6 @@
     color: #fff;
     padding: 10px 0;
     text-align: center;
-  }
-  .content {
-    padding: 20px;
-  }
-  .icon {
-    font-size: 24px;
-    margin-right: 10px;
   }
 
 .material-symbols-outlined {
