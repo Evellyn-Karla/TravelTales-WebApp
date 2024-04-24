@@ -1,0 +1,89 @@
+:root{
+    --font-login : #fefefe
+}
+
+html{
+    height: 100%;
+    background: rgb(233,128,70);
+    background: linear-gradient(180deg, rgba(233,128,70,1) 0%, rgba(240,152,81,1) 18%, rgba(242,158,83,1) 40%, rgba(252,188,97,1) 45%, rgba(206,213,179,1) 54%, rgba(188,222,211,1) 64%, rgba(162,214,196,1) 79%, rgba(181,225,210,1) 100%);
+    height: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+#wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#logo{
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+
+    & #infos{
+        display: flex;
+        flex-direction: column;
+        
+        & .inputLogin{
+            border: none;
+            width: 18rem;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid white;
+            background-color: transparent;
+        }
+
+        & input:active{
+            outline: none;
+            box-shadow: none;
+        }
+
+        & #enviarCad{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            width: 8rem;
+            height: 3rem;
+            margin: 2rem;
+            border-radius: 1.5rem 0rem 1.5rem 0rem;
+            border: 0px;
+            transition: all 50ms;
+        }
+
+        & #enviarCad:active{
+            transform: scale(1.1);
+        }
+    }
+    #cad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        color: var(--font-login);
+
+        & a{
+            color: var(--font-login);
+            font-weight: bold;
+        }
+    }
+
+
+}
