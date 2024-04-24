@@ -1,23 +1,26 @@
-:root{
-    --font-login : #fefefe
+:root {
+    --font-login: #fefefe;
+    --background-cad: #fefefe;
+    --cad-btn: rgb(233, 128, 70);
 }
 
-html{
-    height: 100%;
-    background: rgb(233,128,70);
-    background: linear-gradient(180deg, rgba(233,128,70,1) 0%, rgba(240,152,81,1) 18%, rgba(242,158,83,1) 40%, rgba(252,188,97,1) 45%, rgba(206,213,179,1) 54%, rgba(188,222,211,1) 64%, rgba(162,214,196,1) 79%, rgba(181,225,210,1) 100%);
+
+html {
+    background: rgb(233, 128, 70);
+    background: linear-gradient(180deg, #e98046 0%, rgba(240, 152, 81, 1) 18%, rgba(242, 158, 83, 1) 40%, rgba(252, 188, 97, 1) 45%, rgba(206, 213, 179, 1) 54%, rgba(188, 222, 211, 1) 64%, rgba(162, 214, 196, 1) 79%, rgba(181, 225, 210, 1) 100%);
     height: 100%;
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0px;
     height: 100%;
 }
-#wrapper{
+
+#loginT {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,24 +28,24 @@ body{
 }
 
 
-#logo{
-    height: 20rem;
+#logo {
+    margin-top: 4rem;
     width: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-#login{
+#login {
     display: flex;
     flex-direction: column;
 
-    & #infos{
+    & #infos {
         display: flex;
         flex-direction: column;
-        
-        & .inputLogin{
+
+        & .inputLogin {
             border: none;
             width: 18rem;
             margin: 0.5rem;
@@ -52,12 +55,12 @@ body{
             background-color: transparent;
         }
 
-        & input:active{
+        & input:active {
             outline: none;
             box-shadow: none;
         }
 
-        & #enviarCad{
+        & #enviarLog {
             display: flex;
             justify-content: center;
             align-self: center;
@@ -69,20 +72,84 @@ body{
             transition: all 50ms;
         }
 
-        & #enviarCad:active{
+        & #enviarCad:active {
             transform: scale(1.1);
         }
     }
-    #cad{
+
+    #cad {
         display: flex;
         flex-direction: column;
-        align-items: center;   
+        align-items: center;
         color: var(--font-login);
 
-        & a{
+        & a {
             color: var(--font-login);
             font-weight: bold;
         }
+    }
+
+
+}
+
+#modalCad {
+    display: none;
+    height: 90%;
+    align-items: end;
+    justify-content: center;
+
+    #modal {
+        background-color: var(--background-cad);
+        height: 80%;
+        width: 90%;
+        align-items: end;
+        border-radius: 2rem;
+
+        & #infosCad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30%;
+
+            & .inputCad {
+                border: none;
+                width: 18rem;
+                margin: 1rem;
+                padding: 0.5rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid rgb(63, 60, 60);
+                background-color: transparent;
+                font-size: 14px;
+            }
+
+            & #enviarCad {
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                width: 8rem;
+                height: 3.5rem;
+                margin: 3rem;
+                border-radius: 1.5rem 0rem 1.5rem 0rem;
+                border: 0px;
+                transition: all 50ms;
+                background-color: var(--cad-btn);
+                color: var(--font-login);
+            }
+
+        }
+
+    }
+
+    & #logoCad {
+        position: absolute;
+        top: 10%;
+        bottom: 80%;
+    }
+
+    & #backBtn {
+        position: absolute;
+        top: 5%;
+        left: 5%;
     }
 
 
