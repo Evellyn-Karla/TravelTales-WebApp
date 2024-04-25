@@ -1,4 +1,4 @@
-function infosUser(){
+function infosUser() {
     var usuarioCadastrado = JSON.parse(localStorage.getItem('usuario'));
 
     const nome = document.getElementById('nomecadastrado')
@@ -11,13 +11,13 @@ function infosUser(){
 infosUser();
 
 
-function telaSalvos(){
+function telaSalvos() {
     window.location.href = 'salvos.html'
 }
-function telaHome(){
+function telaHome() {
     window.location.href = '../../index.html'
 }
-function telaPesquisa(){
+function telaPesquisa() {
     window.location.href = 'public/pages/pesquisa.html'
 }
 
@@ -25,9 +25,9 @@ function voltar() {
     window.history.back();
 }
 
-function deslogar(){
+function deslogar() {
     localStorage.removeItem('usuarioLogado');
-    window.location.href= "../../index.html"
+    window.location.href = "login.html"
 }
 
 
