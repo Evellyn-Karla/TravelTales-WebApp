@@ -17,5 +17,6 @@ function voltar() {
 document.getElementById('salvos').addEventListener('click', telaSalvos)
 document.getElementById('home').addEventListener('click', telaHome)
 document.getElementById('perfil').addEventListener('click', telaPerfil)
-document.getElementById('')
+document.getElementById('seta').addEventListener('click', voltar)
+
 
