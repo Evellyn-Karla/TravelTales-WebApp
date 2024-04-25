@@ -1,0 +1,13 @@
+{
+  "background_color": "#efefef",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "name": "TravelTales-Experiências-de-Viagens",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "TravelTales",
+  "start_url": "/index.html",
+  "theme_color": "#e88046",
+  "description": "Transformando destinos em experiências",
+  "lang": "pt"
+}
