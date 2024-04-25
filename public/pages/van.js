@@ -1,10 +1,10 @@
 function infosUser(){
     var usuarioCadastrado = JSON.parse(localStorage.getItem('usuario'));
 
-    const nome = document.getElementById('nome')
+    const nome = document.getElementById('nomecadastrado')
     nome.innerText = usuarioCadastrado.nomeCompleto;
 
-    const email = document.getElementById('email')
+    const email = document.getElementById('emailcadastrado')
     email.innerText = usuarioCadastrado.email
 }
 
@@ -36,5 +36,6 @@ document.getElementById('salvos').addEventListener('click', telaSalvos)
 document.getElementById('home').addEventListener('click', telaHome)
 document.getElementById('buscar').addEventListener('click', telaPesquisa)
 document.getElementById('seta').addEventListener('click', voltar)
+
 document.getElementById('logout').addEventListener('click', deslogar)
 
