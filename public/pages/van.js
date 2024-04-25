@@ -30,7 +30,13 @@ function deslogar() {
     window.location.href = "login.html"
 }
 
-
+document.addEventListener('click', function(event) {
+    // Acessa o elemento clicado através da propriedade target do evento
+    var elementoClicado = event.target;
+    
+    // Exibe o tipo do elemento clicado
+    console.log('Elemento clicado: ' + elementoClicado.tagName);
+  });
 
 document.getElementById('salvos').addEventListener('click', telaSalvos)
 document.getElementById('home').addEventListener('click', telaHome)
