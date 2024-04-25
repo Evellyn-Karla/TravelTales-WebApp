@@ -36,4 +36,5 @@ document.getElementById('salvos').addEventListener('click', telaSalvos)
 document.getElementById('home').addEventListener('click', telaHome)
 document.getElementById('buscar').addEventListener('click', telaPesquisa)
 document.getElementById('seta').addEventListener('click', voltar)
+document.getElementById('logout').addEventListener('click', deslogar)
 
