@@ -1,178 +1,81 @@
 @font-face {
-  font-family: "Ubuntu";
-  src: url(fonts/Ubuntu-Regular.ttf) format("truetype");
-}
-
-body {
-  display: none;
-  margin: 0;
-  margin-bottom: 120px;
-  font-family: "Ubuntu";
-}
-#nav {
-  width: 100%;
-  height: 58px;
-  background-color: #efefef;
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#titleNav h3 {
-  font-family: "Ubuntu";
-  color: #e88046;
-}
-
-#seta {
-  padding-right: 2rem;
-  height: 23px;
-  width: 23px;
-}
-
-/* #logo{
-   margin-left: 35%;
-   padding-top: 10px;
-}*/
-
-#modonoturno{
-   padding-left: 2rem;
-} 
-
-#pesquisar {
-  margin-top: 5rem;
-  margin-inline: 2rem;
-  padding-top: 15px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-#pesquisa {
-  border: none;
-  padding-left: 10px;
-  background-color: transparent;
-}
-
-
-.perfil-infos {
-  padding-top: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-#perfil-info {
-  background-color: #efefef;
-  width: 300px;
-  height: 412px;
-}
-/* #perfil-info img {
-    margin-right: 10px; 
-} */
-
-/* #perfil1{
-    margin-left: 24px;
-} */
-
-/* #salvar{
+    font-family: "Ubuntu";
+    src: url(fonts/Ubuntu-Regular.ttf) format("truetype");
+  }
+#persona{
+    justify-content: center;
+    align-items:center;
     display: flex;
-    justify-self: end;
-    margin-right: 23px;
-} */
+    flex-direction: column;
+    padding-top: 5%;
 
-#imagem1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.perfil-infos2 {
-  padding-top: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+#fotodoperfil{
+    padding-top: 5%;
+    width:50%;
+    height: 50%;
 }
-#perfil-info2 {
-  background-color: #efefef;
-  width: 300px;
-  height: 412px;
+#persona p {
+    padding-top: 5%;
+    font-size: 1rem;
 }
-/* #perfil2{
-    margin-left: 24px;
-} */
-#imagem2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body{
+    font-family: "Ubuntu";
 }
-.perfil-infos3 {
-  padding-top: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+#dados{
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 30%;
+    height: 25%;
 }
-#perfil-info3 {
-  background-color: #efefef;
-  width: 300px;
-  height: 412px;
+#info{
+    padding-top: 5%;
 }
-/* #perfil3{
-    margin-left: 24px;
-} */
-#imagem3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#nome, #email{
+    color: black;
+    font-size: 20px;
+    padding-left:10% ;
+
 }
-.perfil-infos4 {
-  padding-top: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+#nomecadastro, #emailcadastro{
+    color: #787373;
+    font-size: 20px;
+    padding-left:10% ;
+
 }
-#perfil-info4 {
-  background-color: #efefef;
-  width: 300px;
-  height: 412px;
-  margin-top: -50px;
-  z-index: 1;
-}
-/* #perfil4{
-    margin-left: 24px;
-} */
-#imagem4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#logout{
+    padding-top: 15%;
+    padding-left:10% ;
+    width: 30%;
+    height: 20%;
+
 }
 
 .foosen {
-  /* position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    
-    padding: 10px; 
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); 
+    /* position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      
+      padding: 10px; 
+      box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); 
+      display: flex;
+      justify-content: space-between; 
+      align-items: center; 
+       */
+    background-color: #efefef;
+    z-index: 2;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-     */
-  background-color: #efefef;
-  z-index: 2;
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 4rem;
-  align-items: center;
-}
-.foosen i {
-  margin: 0 5px;
-}
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+  }
 
-#nome1,
+  #nome1,
 #nome2,
 #nome3,
 #nome4 {
