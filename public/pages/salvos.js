@@ -1,12 +1,12 @@
 
 function telaPerfil(){
-    window.location.href = 'public/pages/van.html'
+    window.location.href = 'van.html'
 }
 function telaHome(){
     window.location.href = '../../index.html'
 }
 function telaPesquisa(){
-    window.location.href = 'public/pages/pesquisa.html'
+    window.location.href = 'pesquisa.html'
 }
 
 function voltar() {
