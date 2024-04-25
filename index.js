@@ -3,7 +3,8 @@ window.addEventListener('load', function() {
     if (!usuarioCadastrado) {
         window.location.href = 'public/pages/login.html';
     }else{
-    this.document.querySelector('body').style.display = "block';
+        this.document.querySelector('body').style.display = "block";
     }
 });
+
 
