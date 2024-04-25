@@ -1,10 +1,10 @@
 function infosUser() {
     var usuarioCadastrado = JSON.parse(localStorage.getItem('usuario'));
 
-    const nome = document.getElementById('nomecadastrado')
+    const nome = document.getElementById('nomecadastro')
     nome.innerText = usuarioCadastrado.nomeCompleto;
 
-    const email = document.getElementById('emailcadastrado')
+    const email = document.getElementById('emailcadastro')
     email.innerText = usuarioCadastrado.email
 }
 
