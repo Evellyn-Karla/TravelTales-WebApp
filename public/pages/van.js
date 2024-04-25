@@ -25,6 +25,11 @@ function voltar() {
     window.history.back();
 }
 
+function deslogar(){
+    localStorage.removeItem('usuarioLogado');
+    window.location.href= "../../index.html"
+}
+
 
 
 document.getElementById('salvos').addEventListener('click', telaSalvos)
