@@ -1,5 +1,5 @@
 function seeInfo(){
-    window.location.href = "julia.html"
+    window.location.href = "public/pages/julia.html"
 }
 
 
