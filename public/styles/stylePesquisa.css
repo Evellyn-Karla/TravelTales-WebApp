@@ -76,7 +76,7 @@ body {
   border: 1px solid #ccc;
   box-sizing: border-box;
   background-color: #EFEFEF;
-  background-image: url('../images/pesquisar-removedbackground.png');
+   /* background-image: url('../images/pesquisar-removedbackground.png'); */
   background-repeat: no-repeat;
   background-position: 10px center;
   padding-left: 40px;
