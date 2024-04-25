@@ -27,9 +27,9 @@ document.getElementById('infosCad').addEventListener('submit', function (event) 
     localStorage.setItem('usuario', JSON.stringify(usuario));
 
     mostrarMensagem('Cadastro realizado com sucesso!');
+    document.getElementById('infosCad').reset();
 
     backLogin();
-    document.getElementById('infosCad').reset();
 });
 
 function mostrarMensagem(texto) {
