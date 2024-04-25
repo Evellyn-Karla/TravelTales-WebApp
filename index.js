@@ -1,3 +1,9 @@
+function seeInfo(){
+    window.location.href = "julia.html"
+}
+
+
+
 window.addEventListener('load', function() {
     var usuarioCadastrado = localStorage.getItem('usuario');
     if (!usuarioCadastrado) {
@@ -17,13 +23,18 @@ function telaPesquisa(){
     window.location.href = 'public/pages/pesquisa.html'
 }
 
-
+function voltar() {
+    window.history.back();
+}
 
 document.getElementById('salvos').addEventListener('click', telaSalvos)
 document.getElementById('buscar').addEventListener('click', telaPesquisa)
 document.getElementById('perfil').addEventListener('click', telaPerfil)
+document.getElementById('seta').addEventListener('click', voltar)
 
 
 document.getElementById('pesquisar').addEventListener('click', telaPesquisa)
+
+document.getElementById('perfil-info').addEventListener('click', seeInfo)
 
 
