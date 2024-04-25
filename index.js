@@ -17,7 +17,7 @@ function telaPerfil(){
     window.location.href = 'public/pages/van.html'
 }
 function telaSalvos(){
-    window.location.href = 'public/pages/van.html'
+    window.location.href = 'public/pages/salvos.html'
 }
 function telaPesquisa(){
     window.location.href = 'public/pages/pesquisa.html'
