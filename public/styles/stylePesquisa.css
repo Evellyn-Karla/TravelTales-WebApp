@@ -82,6 +82,17 @@ body {
   padding-left: 40px;
 }
 
+
+.mapa1 {
+
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  margin-left: 8%;
+  padding: 7px;
+  
+}
+
 .categorias-container {
   width: 147px;
   height: 38px;
