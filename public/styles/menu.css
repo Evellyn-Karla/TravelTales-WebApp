@@ -3,6 +3,7 @@
     src:url(fonts/Ubuntu/Ubuntu-Regular.ttf) format('truetype');
   } 
 body{
+    display: none;
     margin-top: 0;
     margin-bottom: 120px;
 }
