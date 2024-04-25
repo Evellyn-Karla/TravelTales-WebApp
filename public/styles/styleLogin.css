@@ -20,6 +20,19 @@ body {
     height: 100%;
 }
 
+.mensagem{
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    position: fixed; /* Posição fixa para aparecer sobre os outros elementos */
+    top: 20px; /* Distância do topo */
+    left: 50%; /* Centralizado horizontalmente */
+    transform: translateX(-50%); /* Centralizado horizontalmente */
+    z-index: 9999; /* Z-index alto para aparecer sobre outros elementos */
+    display: none; /* Inicialmente oculta */
+}
+
 #loginT {
     width: 100%;
     display: flex;
