@@ -6,7 +6,7 @@
   "orientation": "portrait",
   "scope": "/",
   "short_name": "TravelTales",
-  "start_url": "index.html",
+  "start_url": "/index.html",
   "theme_color": "#e88046",
   "description": "Transformando destinos em experiências",
   "lang": "pt",
