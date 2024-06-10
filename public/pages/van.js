@@ -1,5 +1,5 @@
 function infosUser() {
-    const usuarioCadastrado = JSON.parse(localStorage.getItem("usuario"));
+    const usuarioCadastrado = JSON.parse(localStorage.getItem("usuarioLogado"));
   
     if (usuarioCadastrado) {
       const nome = document.getElementById("nomecadastro");
@@ -32,7 +32,7 @@ function infosUser() {
   }
   
   function deslogar() {
-    localStorage.removeItem("usuario");
+    localStorage.removeItem("usuarioLogado");
     window.location.href = "login.html";
   }
   

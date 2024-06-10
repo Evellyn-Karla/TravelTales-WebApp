@@ -1,3 +1,4 @@
+const getLocalStorage = () => JSON.parse(localStorage.getItem('usuarios')) || [];
 
 document.getElementById('infosCad').addEventListener('submit', function (event) {
     event.preventDefault(); // Impede o envio do formulário
@@ -23,8 +24,11 @@ document.getElementById('infosCad').addEventListener('submit', function (event) 
         senha: senha
     };
 
+    const usuarios = getLocalStorage();
+    console.log('usuarios', usuarios)
+    usuarios.push(usuario)
     // Armazena os dados do usuário no localStorage
-    localStorage.setItem('usuario', JSON.stringify(usuario));
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
     mostrarMensagem('Cadastro realizado com sucesso!');
     document.getElementById('infosCad').reset();
@@ -44,7 +48,7 @@ function mostrarMensagem(texto) {
 
     // Esconder a mensagem após o tempo especificado
     setTimeout(function () {
-        mensagemCadastroSucesso.style.display = 'none';
+        mensagem.style.display = 'none';
     }, tempoVisivel);
 }
 
@@ -56,19 +60,23 @@ document.getElementById('infos').addEventListener('submit', function (event) {
     var nomeOuEmail = document.getElementById('nomeOuEmail').value;
     var senha = document.getElementById('senhaLog').value;
 
+    const log = []
+    log.push({nomeOuEmail, senha})
     // Obtém o usuário cadastrado no localStorage
-    var usuarioCadastrado = JSON.parse(localStorage.getItem('usuario'));
+    var usuarios = JSON.parse(localStorage.getItem('usuarios'));
 
     // Verifica se o usuário existe e se as credenciais coincidem
-    if (usuarioCadastrado &&
-        (nomeOuEmail === usuarioCadastrado.username || nomeOuEmail === usuarioCadastrado.email) &&
-        senha === usuarioCadastrado.senha) {
-        mostrarMensagem('Login bem-sucedido!');
-        window.location.href = '../../index.html';
-
+    if (usuarios) {
+        usuarios.forEach(element => {
+            if ((nomeOuEmail === element.username || nomeOuEmail === element.email) && (senha === element.senha)) {
+                mostrarMensagem('Login bem-sucedido!');
+                window.location.href = '../../index.html';
+                localStorage.setItem('usuarioLogado', JSON.stringify(element))
+            }
+        });
     } else {
         mostrarMensagem('Nome de usuário/email ou senha incorretos.')
-        
+
     }
 });
 
