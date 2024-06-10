@@ -6,8 +6,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu';
-  background-color: #f2f2f2;
+  font-family: "Ubuntu";
+  background-color: #FFFFFF;
 }
 #nav {
   width: 100%;
@@ -18,6 +18,11 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+#icons {
+  height: 26px;
+  width: 26px;
 }
 
 #titleNav h3 {
@@ -53,7 +58,7 @@ body {
   padding: 5%;
 }
 
-#catgs{
+#catgs {
   width: 100%;
 }
 
@@ -68,29 +73,26 @@ body {
   text-align: center;
 }
 
-.search-container input[type=text] {
+.search-container input[type="text"] {
   margin-top: 5rem;
   width: 100%;
   padding: 10px;
   border-radius: 20px;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  background-color: #EFEFEF;
-   /* background-image: url('../images/pesquisar-removedbackground.png'); */
+  background-color: #efefef;
+  /* background-image: url('../images/pesquisar-removedbackground.png'); */
   background-repeat: no-repeat;
   background-position: 10px center;
   padding-left: 40px;
 }
 
-
 .mapa1 {
-
   width: 80%;
   justify-content: center;
   display: flex;
   margin-left: 8%;
   padding: 7px;
-  
 }
 
 .categorias-container {
@@ -98,17 +100,17 @@ body {
   height: 38px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: #E88046;
+  background-color: #e88046;
   text-align: center;
   line-height: 38px;
   margin: 60px auto 20px auto;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subcategorias-container {
   width: 147px;
   height: 38px;
-  background-color: #A5D7C6;
+  background-color: #a5d7c6;
   text-align: center;
   line-height: 38px;
   margin: 20px 10px;
@@ -151,24 +153,24 @@ body {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 
-body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        #map {
+#map {
   width: 320px;
   height: 320px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  background-color: #008F1F;
+  background-color: #008f1f;
   margin: 5px;
 }
 
-p{
-    display: none;
+p {
+  display: none;
 }
