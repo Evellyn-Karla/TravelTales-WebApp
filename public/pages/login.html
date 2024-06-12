@@ -105,5 +105,9 @@
       </div>
     </div>
   </body>
-  <script src="./login.js"></script>
+  <script src="./login.js">
+    if (typeof navigator.serviceWorker !== 'undefined') {
+          navigator.serviceWorker.register('../sw.js')
+            }
+  </script>
 </html>
